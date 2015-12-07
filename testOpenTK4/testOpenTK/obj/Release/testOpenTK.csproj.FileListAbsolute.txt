@@ -1,0 +1,16 @@
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\bin\Release\testOpenTK.exe.config
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\bin\Release\testOpenTK.exe
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\bin\Release\testOpenTK.pdb
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\bin\Release\OpenTK.dll
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\bin\Release\OpenTK.xml
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\obj\Release\MainWindow.baml
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\obj\Release\MainWindow.g.cs
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\obj\Release\App.g.cs
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\obj\Release\testOpenTK_MarkupCompile.cache
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\obj\Release\testOpenTK.g.resources
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\obj\Release\testOpenTK.Properties.Resources.resources
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\obj\Release\testOpenTK.csproj.GenerateResource.Cache
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\obj\Release\testOpenTK.exe
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\obj\Release\testOpenTK.pdb
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\bin\Release\testOpenTK.exe.CodeAnalysisLog.xml
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\bin\Release\testOpenTK.exe.lastcodeanalysissucceeded
