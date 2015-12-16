@@ -13,7 +13,7 @@ namespace TestOpenTK
         private DispatcherTimer clock;
         private GamePadState oldgstate;
         private Joystick _joystick;
-
+        private Gamepad _gamepad;
         // Event Declaration
         // GamePadAction: Triggered when the oldgstate is different from the current GamePadState
         // Joystick.OnAction: Triggered when the joystick state is changed.
@@ -25,6 +25,7 @@ namespace TestOpenTK
         public ControllerEngine()
         {
             this._joystick = new Joystick();
+            this._gamepad = new Gamepad();
             this.ActiveDevice = 0;
             oldgstate = OpenTK.Input.GamePad.GetState(this.ActiveDevice);
             createNewTimer();

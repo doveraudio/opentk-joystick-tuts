@@ -84,18 +84,17 @@ namespace TestOpenTK
 
         public virtual void Poll()
         {
-            ActionEventArgs args = new ActionEventArgs(this.Instance);
-            var joystick = this.State;
+            var state = this.State;
 
             foreach (Button button in this.Buttons)
             {
-                if (this.oldstate.GetButton((JoystickButton)button.Index) != joystick.GetButton((JoystickButton)button.Index))
+                if (this.oldstate.GetButton((JoystickButton)button.Index) != state.GetButton((JoystickButton)button.Index))
                 {
-                    if (joystick.GetButton((JoystickButton)button.Index) == ButtonState.Pressed)
+                    if (state.GetButton((JoystickButton)button.Index) == ButtonState.Pressed)
                     {
                         button.Press();
                     }
-                    if (joystick.GetButton((JoystickButton)button.Index) == ButtonState.Released)
+                    if (state.GetButton((JoystickButton)button.Index) == ButtonState.Released)
                     {
                         button.Release();
                     }

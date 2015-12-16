@@ -69,6 +69,7 @@
     </Compile>
     <Compile Include="Button.cs" />
     <Compile Include="ControllerEngine.cs" />
+    <Compile Include="Gamepad.cs" />
     <Compile Include="Joystick.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
