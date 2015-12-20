@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TestOpenTK.Properties {
+namespace FreeInput.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

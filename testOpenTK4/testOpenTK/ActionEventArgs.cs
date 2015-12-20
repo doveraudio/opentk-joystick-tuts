@@ -1,7 +1,7 @@
 ﻿using System;
 using OpenTK.Input;
 
-namespace TestOpenTK
+namespace FreeInput
 {
     public class ActionEventArgs : EventArgs
     {

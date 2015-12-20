@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 using System.Windows.Threading;
 using System.Collections.ObjectModel;
 using OpenTK.Input;
-namespace TestOpenTK
+namespace FreeInput
 {
-    class Gamepad
+    public class Gamepad
     {
-        public Gamepad() { 
+        public Gamepad() {
+            
+            this.Instance = 0;
+            this.oldstate = this.State;
+            this.InitializeButtons();
         }
 
 
@@ -41,6 +45,27 @@ namespace TestOpenTK
             this.oldstate = this.State;
         }
 
+        protected void InitializeButtons() 
+        {
+
+            this.A = new Button();
+            this.B = new Button();
+            this.X = new Button();
+            this.Y = new Button();
+            
+            this.Back = new Button();
+            this.Start = new Button();
+            this.BigButton = new Button();
+            this.LeftStick = new Button();
+            this.RightStick = new Button();
+            this.LeftShoulder = new Button();
+            this.RightShoulder = new Button();
+            this.LeftTrigger = new Button();
+            this.RightTrigger = new Button();
+
+
+        }
+
         public Button A;
         public Button B;
         public Button X;
@@ -69,7 +94,8 @@ namespace TestOpenTK
                 {
                     A.Press();
                 }
-                else {
+                if (buttons.A == ButtonState.Released)
+                {
                     A.Release();
                 }
                 
@@ -81,7 +107,7 @@ namespace TestOpenTK
                 {
                     B.Press();
                 }
-                else
+                if (buttons.B == ButtonState.Released)
                 {
                     B.Release();
                 }
@@ -233,6 +259,9 @@ namespace TestOpenTK
             }
 
         }
+
+        
+
 
         public event EventHandler<ActionEventArgs> Action;
     }

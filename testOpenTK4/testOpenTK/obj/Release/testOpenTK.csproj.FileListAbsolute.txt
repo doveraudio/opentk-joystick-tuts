@@ -8,9 +8,8 @@ C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\obj\Release\MainWindow
 C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\obj\Release\App.g.cs
 C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\obj\Release\testOpenTK_MarkupCompile.cache
 C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\obj\Release\testOpenTK.g.resources
-C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\obj\Release\testOpenTK.Properties.Resources.resources
 C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\obj\Release\testOpenTK.csproj.GenerateResource.Cache
 C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\obj\Release\testOpenTK.exe
 C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\obj\Release\testOpenTK.pdb
-C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\bin\Release\testOpenTK.exe.CodeAnalysisLog.xml
-C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\bin\Release\testOpenTK.exe.lastcodeanalysissucceeded
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\obj\Release\testOpenTK.csprojResolveAssemblyReference.cache
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK4\testOpenTK\obj\Release\FreeInput.Properties.Resources.resources

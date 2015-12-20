@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TestOpenTK
+namespace FreeInput
 {
     public class Button
     {

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Threading;
 using OpenTK.Input;
-namespace TestOpenTK
+namespace FreeInput
 {
 
     public class ControllerEngine
@@ -21,6 +21,8 @@ namespace TestOpenTK
         private int clockspeed = 25; // 25 millisecond window for clock on joystick polling.
 
         public Joystick Joystick { get { return this._joystick; } }
+
+        public Gamepad Gamepad { get { return this._gamepad; } }
 
         public ControllerEngine()
         {
@@ -57,18 +59,19 @@ namespace TestOpenTK
         private void checkGamePads(Object sender, EventArgs e)
         {
             ActionEventArgs args = new ActionEventArgs(this.ActiveDevice);
-            if (!args.GamepadState.Equals(oldgstate))
+            if (this.Gamepad.Changed())
             {
                 //call event
-                OnGamepadAction(args);
+                this.Gamepad.Poll();
+                this.Gamepad.Update();
 
-                oldgstate = args.GamepadState;
+               // oldgstate = args.GamepadState;
             }
             if (this.Joystick.Changed())
             {
                 //call event
                 this.Joystick.Poll();
-                this.Joystick.OnAction(args);
+                //this.Joystick.OnAction(args);
                 this.Joystick.Update();
             }
         }

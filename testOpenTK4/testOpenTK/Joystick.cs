@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Threading;
 using OpenTK.Input;
 using System.Collections.ObjectModel;
-namespace TestOpenTK
+namespace FreeInput
 {
     public class Joystick
     {

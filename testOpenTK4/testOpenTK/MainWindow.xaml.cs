@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Threading;
 
-namespace TestOpenTK
+namespace FreeInput
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -27,6 +27,49 @@ namespace TestOpenTK
 
             controller.Joystick.Action += controller_JoystickAction;
             controller.GamepadAction += controller_GamePadAction;
+
+
+
+
+
+            controller.Gamepad.A.Pressed += A_Pressed;
+            controller.Gamepad.A.Released += A_Released;
+
+            controller.Gamepad.B.Pressed += B_Pressed;
+            controller.Gamepad.B.Released += B_Released;
+
+            controller.Gamepad.X.Pressed += X_Pressed;
+            controller.Gamepad.X.Released += X_Released;
+
+            controller.Gamepad.Y.Pressed += Y_Pressed;
+            controller.Gamepad.Y.Released += Y_Released;
+
+            controller.Gamepad.Back.Pressed += Back_Pressed;
+            controller.Gamepad.Back.Released += Back_Released;
+
+            controller.Gamepad.Start.Pressed += Start_Pressed;
+            controller.Gamepad.Start.Released += Start_Released;
+
+            controller.Gamepad.BigButton.Pressed += BigButton_Pressed;
+            controller.Gamepad.BigButton.Released += BigButton_Released;
+            
+            controller.Gamepad.LeftShoulder.Pressed += LeftShoulder_Pressed;
+            controller.Gamepad.LeftShoulder.Released += LeftShoulder_Released;
+            
+            controller.Gamepad.RightShoulder.Pressed  += RightShoulder_Pressed;
+            controller.Gamepad.RightShoulder.Released += RightShoulder_Released;
+
+            controller.Gamepad.LeftStick.Pressed += LeftStick_Pressed;
+            controller.Gamepad.LeftStick.Released += LeftStick_Released;
+
+            controller.Gamepad.RightStick.Pressed += RightStick_Pressed;
+            controller.Gamepad.RightStick.Released += RightStick_Released;
+
+            controller.Gamepad.LeftTrigger.Pressed += LeftTrigger_Pressed;
+            controller.Gamepad.LeftTrigger.Released += LeftTrigger_Released;
+
+            controller.Gamepad.RightTrigger.Pressed += RightTrigger_Pressed;
+            controller.Gamepad.RightTrigger.Released += RightTrigger_Released;
 
             controller.Joystick.Buttons[0].Pressed += controller_Button0Pressed;
             controller.Joystick.Buttons[0].Released += controller_Button0Released;
@@ -69,6 +112,166 @@ namespace TestOpenTK
             controller.Joystick.Buttons[19].Pressed += controller_Button19Pressed;
             controller.Joystick.Buttons[19].Released += controller_Button19Released;
         }
+
+        private void RightTrigger_Released(object sender, ActionEventArgs e)
+        {
+            cbButtonRightTrigger.IsChecked = false;
+            txtGamePadLastAction.Text = "Right Trigger button released";
+        }
+
+        private void RightTrigger_Pressed(object sender, ActionEventArgs e)
+        {
+            cbButtonRightTrigger.IsChecked = true;
+            txtGamePadLastAction.Text = "Right Trigger button pressed";
+        }
+
+        private void LeftTrigger_Released(object sender, ActionEventArgs e)
+        {
+            cbButtonLeftTrigger.IsChecked = false;
+            txtGamePadLastAction.Text = "LEft Trigger button released";
+        }
+
+        void LeftTrigger_Pressed(object sender, ActionEventArgs e)
+        {
+            cbButtonLeftTrigger.IsChecked = true;
+            txtGamePadLastAction.Text = "Left TRigger button pressed";
+        }
+
+        void RightStick_Released(object sender, ActionEventArgs e)
+        {
+            cbButtonRightStick.IsChecked = false;
+            txtGamePadLastAction.Text = "Right Stick button released";
+        }
+
+        void RightStick_Pressed(object sender, ActionEventArgs e)
+        {
+            cbButtonRightStick.IsChecked = true;
+            txtGamePadLastAction.Text = "Right Stick button pressed";
+        }
+
+        void LeftStick_Released(object sender, ActionEventArgs e)
+        {
+            cbButtonLeftStick.IsChecked = false;
+            txtGamePadLastAction.Text = "Left Stick button released";
+        }
+
+        void LeftStick_Pressed(object sender, ActionEventArgs e)
+        {
+            cbButtonLeftStick.IsChecked = true;
+            txtGamePadLastAction.Text = "Left Stick button pressed";
+        }
+
+        private void RightShoulder_Released(object sender, ActionEventArgs e)
+        {
+            cbButtonRightShoulder.IsChecked = false;
+            txtGamePadLastAction.Text = "Right Shoulder button released";
+        }
+
+        void RightShoulder_Pressed(object sender, ActionEventArgs e)
+        {
+            cbButtonRightShoulder.IsChecked = true;
+            txtGamePadLastAction.Text = "Right Shoulder button pressed";
+        }
+
+        void LeftShoulder_Released(object sender, ActionEventArgs e)
+        {
+            cbButtonLeftShoulder.IsChecked = false;
+            txtGamePadLastAction.Text = "Left Shoulder button released";
+        }
+
+        void LeftShoulder_Pressed(object sender, ActionEventArgs e)
+        {
+            cbButtonLeftShoulder.IsChecked = true;
+            txtGamePadLastAction.Text = "Big Button pressed";
+        }
+
+        void BigButton_Released(object sender, ActionEventArgs e)
+        {
+            cbButtonBigButton.IsChecked = false;
+            txtGamePadLastAction.Text = "Big Button released";
+        }
+
+        void BigButton_Pressed(object sender, ActionEventArgs e)
+        {
+            cbButtonBigButton.IsChecked = true;
+            txtGamePadLastAction.Text = "Big Button pressed";
+        }
+
+        void Start_Released(object sender, ActionEventArgs e)
+        {
+            cbButtonStart.IsChecked = false;
+            txtGamePadLastAction.Text = "Start button released";
+        }
+
+        void Start_Pressed(object sender, ActionEventArgs e)
+        {
+            cbButtonStart.IsChecked = true;
+            txtGamePadLastAction.Text = "start button pressed";
+        }
+
+        void Back_Released(object sender, ActionEventArgs e)
+        {
+            cbButtonBack.IsChecked = false;
+            txtGamePadLastAction.Text = "Back button released";
+        }
+
+        void Back_Pressed(object sender, ActionEventArgs e)
+        {
+            cbButtonBack.IsChecked = true;
+            txtGamePadLastAction.Text = "Back button pressed";
+        }
+
+        void Y_Released(object sender, ActionEventArgs e)
+        {
+            cbButtonY.IsChecked = false;
+            txtGamePadLastAction.Text = "Y button released";
+        }
+
+        void Y_Pressed(object sender, ActionEventArgs e)
+        {
+            cbButtonY.IsChecked = true;
+            txtGamePadLastAction.Text = "Y button pressed";
+        }
+
+        void X_Released(object sender, ActionEventArgs e)
+        {
+            cbButtonX.IsChecked = false;
+            txtGamePadLastAction.Text = "X button released";
+        }
+
+        void X_Pressed(object sender, ActionEventArgs e)
+        {
+            cbButtonX.IsChecked = true;
+            txtGamePadLastAction.Text = "X button pressed";
+        }
+
+        void B_Released(object sender, ActionEventArgs e)
+        {
+            cbButtonB.IsChecked = false;
+            txtGamePadLastAction.Text = "B button released";
+        }
+
+        void B_Pressed(object sender, ActionEventArgs e)
+        {
+            cbButtonB.IsChecked = true;
+            txtGamePadLastAction.Text = "B button pressed";
+        }
+
+        private void A_Released(object sender, ActionEventArgs e)
+        {
+            cbButtonA.IsChecked = false;
+            txtGamePadLastAction.Text = "A button pressed";
+        }
+
+        private void A_Pressed(object sender, ActionEventArgs e)
+        {
+            cbButtonA.IsChecked = true;
+            txtGamePadLastAction.Text = "A button released";
+        }
+
+
+
+
 
         private void controller_Button0Pressed(object sender, ActionEventArgs e)
         {

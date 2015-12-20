@@ -7,7 +7,7 @@
     <ProjectGuid>{DFF86BB0-04A6-4166-ADB2-103D3A6569CC}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestOpenTK</RootNamespace>
+    <RootNamespace>FreeInput</RootNamespace>
     <AssemblyName>testOpenTK</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
