@@ -67,6 +67,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Axis.cs" />
     <Compile Include="Button.cs" />
     <Compile Include="ControllerEngine.cs" />
     <Compile Include="Gamepad.cs" />

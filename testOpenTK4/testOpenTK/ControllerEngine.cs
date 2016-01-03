@@ -11,7 +11,7 @@ namespace FreeInput
     public class ControllerEngine
     {
         private DispatcherTimer clock;
-        private GamePadState oldgstate;
+        //private GamePadState oldgstate;
         private Joystick _joystick;
         private Gamepad _gamepad;
         // Event Declaration
@@ -29,7 +29,7 @@ namespace FreeInput
             this._joystick = new Joystick();
             this._gamepad = new Gamepad();
             this.ActiveDevice = 0;
-            oldgstate = OpenTK.Input.GamePad.GetState(this.ActiveDevice);
+            //oldgstate = OpenTK.Input.GamePad.GetState(this.ActiveDevice);
             createNewTimer();
         }
 
@@ -61,17 +61,13 @@ namespace FreeInput
             ActionEventArgs args = new ActionEventArgs(this.ActiveDevice);
             if (this.Gamepad.Changed())
             {
-                //call event
                 this.Gamepad.Poll();
                 this.Gamepad.Update();
-
-               // oldgstate = args.GamepadState;
+                
             }
             if (this.Joystick.Changed())
             {
-                //call event
                 this.Joystick.Poll();
-                //this.Joystick.OnAction(args);
                 this.Joystick.Update();
             }
         }

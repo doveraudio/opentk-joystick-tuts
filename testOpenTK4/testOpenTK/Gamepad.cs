@@ -10,9 +10,17 @@ namespace FreeInput
 {
     public class Gamepad
     {
-        public Gamepad() {
-            
+        public Gamepad()
+        {
+
             this.Instance = 0;
+            this.oldstate = this.State;
+            this.InitializeButtons();
+        }
+        public Gamepad(int instance)
+        {
+
+            this.Instance = instance;
             this.oldstate = this.State;
             this.InitializeButtons();
         }
@@ -63,6 +71,10 @@ namespace FreeInput
             this.LeftTrigger = new Button();
             this.RightTrigger = new Button();
 
+            this.LeftAxis = new Axis();
+            this.RightAxis = new Axis();
+
+            
 
         }
 
@@ -81,6 +93,10 @@ namespace FreeInput
         public Button RightShoulder;
         public Button LeftTrigger;
         public Button RightTrigger;
+
+        public Axis LeftAxis;
+        public Axis RightAxis;
+        
         public virtual void Poll() {
             
             var buttons = this.State.Buttons;
@@ -88,6 +104,19 @@ namespace FreeInput
 
             var triggers = this.State.Triggers;
             var oldtriggers = this.oldstate.Triggers;
+
+            if (!this.oldstate.ThumbSticks.Left.Equals(this.State.ThumbSticks.Left)) {
+                this.LeftAxis.Update(this.State.ThumbSticks.Left.X, this.State.ThumbSticks.Left.Y);
+                this.LeftAxis.Move();
+            }
+            if (!this.oldstate.ThumbSticks.Right.Equals(this.State.ThumbSticks.Right))
+            {
+                this.RightAxis.Update(this.State.ThumbSticks.Right.X, this.State.ThumbSticks.Right.Y);
+                this.RightAxis.Move();
+            }
+
+
+
             if (!buttons.A.Equals(oldbuttons.A) )
             {
                 if (buttons.A == ButtonState.Pressed)

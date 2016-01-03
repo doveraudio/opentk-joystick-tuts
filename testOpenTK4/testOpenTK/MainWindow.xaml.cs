@@ -22,13 +22,14 @@ namespace FreeInput
 
         private void initializeController(Object sender, EventArgs e)
         {
-            txtGamePadCapabilitiesDebug.Text = controller.CapabilitiesGamepad.ToString();
+            txtGamePadCapabilitiesDebug.Text = controller.Gamepad.Capabilities.ToString();
             txtJoystickCapabilitiesDebug.Text = controller.Joystick.Capabilities.ToString();
 
             controller.Joystick.Action += controller_JoystickAction;
             controller.GamepadAction += controller_GamePadAction;
 
-
+            controller.Gamepad.LeftAxis.Moved += LeftAxis_Moved;
+            controller.Gamepad.RightAxis.Moved += RightAxis_Moved;
 
 
 
@@ -111,6 +112,16 @@ namespace FreeInput
             controller.Joystick.Buttons[18].Released += controller_Button18Released;
             controller.Joystick.Buttons[19].Pressed += controller_Button19Pressed;
             controller.Joystick.Buttons[19].Released += controller_Button19Released;
+        }
+
+        private void RightAxis_Moved(object sender, ActionEventArgs e)
+        {
+            txtGamePadLastAction.Text = "Right Joystick Moved X: " + controller.Gamepad.RightAxis.X.ToString() + " Y: " + controller.Gamepad.RightAxis.Y.ToString(); 
+        }
+
+        private void LeftAxis_Moved(object sender, ActionEventArgs e)
+        {
+            txtGamePadLastAction.Text = "Left Joystick Moved X: " + controller.Gamepad.LeftAxis.X.ToString() + " Y: "+ controller.Gamepad.LeftAxis.Y.ToString();
         }
 
         private void RightTrigger_Released(object sender, ActionEventArgs e)
