@@ -1,0 +1,9 @@
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK5\JoystickEventsConsole\bin\Debug\JoystickEventsConsole.exe.config
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK5\JoystickEventsConsole\bin\Debug\JoystickEventsConsole.exe
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK5\JoystickEventsConsole\bin\Debug\JoystickEventsConsole.pdb
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK5\JoystickEventsConsole\bin\Debug\JoystickEvents.dll
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK5\JoystickEventsConsole\bin\Debug\OpenTK.dll
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK5\JoystickEventsConsole\bin\Debug\JoystickEvents.pdb
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK5\JoystickEventsConsole\bin\Debug\OpenTK.xml
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK5\JoystickEventsConsole\obj\Debug\JoystickEventsConsole.exe
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK5\JoystickEventsConsole\obj\Debug\JoystickEventsConsole.pdb

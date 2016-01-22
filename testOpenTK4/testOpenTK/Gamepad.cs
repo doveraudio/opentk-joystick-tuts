@@ -33,8 +33,9 @@ namespace FreeInput
         public OpenTK.Input.GamePadState State { get { return OpenTK.Input.GamePad.GetState(this.Instance); } }
         public OpenTK.Input.GamePadCapabilities Capabilities { 
             get 
+
             {
-                return OpenTK.Input.GamePad.GetCapabilities(this.Instance);
+                return OpenTK.Input.GamePad.GetCapabilities(Instance);
             } 
         }
 

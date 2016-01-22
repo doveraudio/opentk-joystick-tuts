@@ -1,0 +1,69 @@
+﻿<Window x:Class="FreeInput.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="GamePad/Joystick Monitor" Height="633" Width="800" Background="#FF494949" ResizeMode="NoResize">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" Text="GamePad State" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtGamePadStateDebug" HorizontalAlignment="Left" Height="112" Margin="10,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="235"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="273,15,0,0" TextWrapping="Wrap" Text="Gamepad Capabilities" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtGamePadCapabilitiesDebug" HorizontalAlignment="Left" Height="112" Margin="273,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="234"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="10,165,0,0" TextWrapping="Wrap" Text="Joystick State" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtJoystickStateDebug" HorizontalAlignment="Left" Height="112" Margin="10,184,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="235"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="273,165,0,0" TextWrapping="Wrap" Text="Joystick Capabilities" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtJoystickCapabilitiesDebug" HorizontalAlignment="Left" Height="112" Margin="273,184,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="234"/>
+        <Rectangle Fill="#FFF4F4F5" Name="rectCbContainer" HorizontalAlignment="Left" Height="260" Margin="529,36,0,0" Stroke="Black" VerticalAlignment="Top" Width="255"/>
+        <CheckBox Name="cbButton0" Content="Button0" HorizontalAlignment="Left" Margin="545,48,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="cbButton1" Content="Button1" HorizontalAlignment="Left" Margin="545,68,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="cbButton2" Content="Button2" HorizontalAlignment="Left" Margin="545,88,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="cbButton3" Content="Button3" HorizontalAlignment="Left" Margin="545,108,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="cbButton4" Content="Button4" HorizontalAlignment="Left" Margin="545,128,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="cbButton5" Content="Button5" HorizontalAlignment="Left" Margin="545,148,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="cbButton6" Content="Button6" HorizontalAlignment="Left" Margin="545,168,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="cbButton7" Content="Button7" HorizontalAlignment="Left" Margin="545,188,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="cbButton8" Content="Button8" HorizontalAlignment="Left" Margin="545,208,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="cbButton9" Content="Button9" HorizontalAlignment="Left" Margin="545,228,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="cbButton10" Content="Button10" HorizontalAlignment="Left" Margin="645,48,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="cbButton11" Content="Button11" HorizontalAlignment="Left" Margin="645,68,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="cbButton12" Content="Button12" HorizontalAlignment="Left" Margin="645,88,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="cbButton13" Content="Button13" HorizontalAlignment="Left" Margin="645,108,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="cbButton14" Content="Button14" HorizontalAlignment="Left" Margin="645,128,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="cbButton15" Content="Button15" HorizontalAlignment="Left" Margin="645,148,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="cbButton16" Content="Button16" HorizontalAlignment="Left" Margin="645,168,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="cbButton17" Content="Button17" HorizontalAlignment="Left" Margin="645,188,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="cbButton18" Content="Button18" HorizontalAlignment="Left" Margin="645,208,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="cbButton19" Content="Button19" HorizontalAlignment="Left" Margin="645,228,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtLastButton" HorizontalAlignment="Left" Height="71" Margin="10,310,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="235"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,-13,0,0" TextWrapping="Wrap" Text="Game Pad" VerticalAlignment="Top"/>
+        <Grid HorizontalAlignment="Left" Height="275" Margin="273,319,0,0" VerticalAlignment="Top" Width="511">
+            <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="255" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="491">
+                
+            </Rectangle>
+            <CheckBox Name="cbButtonA" Content="A" HorizontalAlignment="Left" Margin="25,22,0,0" VerticalAlignment="Top"/>
+            <CheckBox Name="cbButtonB" Content="B" HorizontalAlignment="Left" Margin="25,42,0,0" VerticalAlignment="Top"/>
+            <CheckBox Name="cbButtonX" Content="X" HorizontalAlignment="Left" Margin="25,62,0,0" VerticalAlignment="Top"/>
+            <CheckBox Name="cbButtonY" Content="Y" HorizontalAlignment="Left" Margin="25,82,0,0" VerticalAlignment="Top"/>
+
+            <CheckBox Name="cbButtonBack" Content="Back" HorizontalAlignment="Left" Margin="25,122,0,0" VerticalAlignment="Top"/>
+            <CheckBox Name="cbButtonStart" Content="Start" HorizontalAlignment="Left" Margin="25,142,0,0" VerticalAlignment="Top"/>
+            <CheckBox Name="cbButtonBigButton" Content="Big Button" HorizontalAlignment="Left" Margin="25,162,0,0" VerticalAlignment="Top"/>
+
+            <CheckBox Name="cbButtonLeftStick" Content="Left Stick" HorizontalAlignment="Left" Margin="125,122,0,0" VerticalAlignment="Top"/>
+            <CheckBox Name="cbButtonLeftShoulder" Content="Left Shoulder" HorizontalAlignment="Left" Margin="125,142,0,0" VerticalAlignment="Top"/>
+            <CheckBox Name="cbButtonLeftTrigger" Content="Left Trigger" HorizontalAlignment="Left" Margin="125,162,0,0" VerticalAlignment="Top"/>
+
+            <CheckBox Name="cbButtonRightStick" Content="Right Stick" HorizontalAlignment="Left" Margin="225,122,0,0" VerticalAlignment="Top"/>
+            <CheckBox Name="cbButtonRightShoulder" Content="Right Shoulder" HorizontalAlignment="Left" Margin="225,142,0,0" VerticalAlignment="Top"/>
+            <CheckBox Name="cbButtonRightTrigger" Content="Right Trigger" HorizontalAlignment="Left" Margin="225,162,0,0" VerticalAlignment="Top"/>
+
+        </Grid>
+        <TextBox Name="txtGamePadLastAction" HorizontalAlignment="Left" Height="69" Margin="10,396,0,0" TextWrapping="Wrap" Text="Waiting For Next Event" VerticalAlignment="Top" Width="235"/>
+
+
+
+
+
+    </Grid>
+</Window>

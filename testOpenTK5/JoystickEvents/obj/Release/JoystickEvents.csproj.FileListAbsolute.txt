@@ -1,0 +1,7 @@
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK5\JoystickEvents\bin\Release\JoystickEvents.dll
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK5\JoystickEvents\bin\Release\JoystickEvents.pdb
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK5\JoystickEvents\bin\Release\OpenTK.dll
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK5\JoystickEvents\bin\Release\OpenTK.xml
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK5\JoystickEvents\obj\Release\JoystickEvents.csprojResolveAssemblyReference.cache
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK5\JoystickEvents\obj\Release\JoystickEvents.dll
+C:\Code\csharp\mine\TutorialOpenTK\testOpenTK5\JoystickEvents\obj\Release\JoystickEvents.pdb
